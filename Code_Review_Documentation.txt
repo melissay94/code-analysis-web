@@ -1,0 +1,57 @@
+Documentation of my thought process for this code review
+  Overall
+  - Break up the index.html file into separate files for css and js
+    - Break up the js script tag into three separate files based on what their labeled sections.
+  - Run linter on JS files for syntax fixes
+    - Use airbnb linter
+  
+  For index.html
+  - Change template to HTML5 instead of HTML4.01 strict
+  - Include language attribute
+  - Include meta tag for charset
+  - Change title tage to reflect application purpose
+  - Add Bootstrap library for quick easy style base
+  - Add Bootstrap to help make responsive
+
+  For style.css
+  - Style for more responsive design
+  - Add a bit more padding 
+  - Style header for a bit of pop
+  - Set width of controls area bigger so they all fit on one line
+  - Set height of table rows to 100 vs image height to avoid stretched images
+  - Set background color of even numbered table rows to be gray to help with differentiating
+  - Set background color of table header to match even rows
+
+  For JS overall
+  - Use consistent function declarations (Fat arrow preferred)
+  - Use consistent line endings (semi-colons preferred)
+  - Add default image for lack of image or for error messages
+
+  For apiCall.js
+  - Change error location to be inside a catch statemnet
+  - Change error message to print out error being thrown to the console
+  - Populate array with an error message to show in view
+
+  For dataTransform.js
+  - Extend 'filterByName' for wider search
+    - Search letter by letter instead of by entire string (Allows for list narrowing)
+    - Search by full name instead of just first or last
+    - Format search query to be non case sensative and to ignore white space
+    - Return no one found message if no results match
+    - Return the whole list if search box contains no characters (with the exception of space characters)
+  - Change 'sortByLastName' to sort by lastname prop instead of reversing list sorted by firstname prop
+
+  For views.js
+    - Add header to page that explains application purpose
+    - Add placeholder to search field to explain its purpose
+    - Change wording of buttons to be more organic
+    - Change table column label "Thumbnail" to a more recognized word
+    - Add class to table rows differentiating odds and evens
+    - Create new div for controls
+    - Change key for people mapping to use id instead of index
+    - Include logic for thumbnail to handle undefined image urls
+
+
+- For the future
+  - Would move to an actual react application
+  - Would require linter in package.json

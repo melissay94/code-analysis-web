@@ -1,0 +1,47 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+}
+
+.app-container {
+    max-width: 650px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.app-container h1 {
+    text-align: center;
+    color: #1cd9c3;
+}
+
+.control-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.list-container {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+    border: 1px solid black;
+}
+
+.list-container .image {
+    width: 100px;
+}
+
+.list-container thead {
+  background-color: #ddd;
+}
+
+.list-container tbody tr {
+  height: 100px;
+}
+
+.list-container tbody .row-even {
+  background-color: #ddd; 
+}
+
